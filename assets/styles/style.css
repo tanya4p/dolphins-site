@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(255, 253, 253, 0);
+    padding: 20px 10px;
+}
+
+.wrap-logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: #212121;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: rgba(80, 164, 231, 0.4);
+    color: #212121;
+}
+
+header a.active {
+    background-color: rgba(80, 164, 231, 0.7);
+}
+
+nav {
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+#logo-dolphin {
+    width: 32px;
+    height: 32px;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.block {
+    background: #FFFFFF;
+    box-shadow: 5px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section-left {
+    display: block;
+    float: left;
+    min-width: 512px;
+    max-width: 512px;
+}
+
+.section-right {
+    display: block;
+    float: right;
+    align-content: center;
+    text-align: center;
+}
+
+.section-right h3 {
+    text-align: center;
+}
+
+.block-image {
+    margin-top: 22px;
+    margin-right: 22px;
+    margin-bottom: 20px;
+    background-image: url('../images/dolphin-body.jpg');
+    /*background-position: 50% 50%;*/
+    max-width: 480px;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: rgba(80, 164, 231, 0.7);
+    text-align: center;
+}
